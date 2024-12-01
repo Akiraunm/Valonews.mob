@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Infant", serif;
+}
+:root {
+    --killjoy: #FABC3F;
+    --raze: #E85C0D;
+    --clove: #C7253E;
+    --iso: #001F3F;
+    --reyna: #61051f;
+    --omen: #000000;
+}
+.bt {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button {
+    padding: 10px 45px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.primary {
+    background-color: #001F3F;
+    color: var(--killjoy);
+}
+.header {
+    background-color: var(--reyna);
+    padding: 15px 0;
+}
+.category {
+    text-decoration: none;
+    cursor: pointer;
+}
+.category svg {
+    color: #FABC3F;
+}
+
+
+.mb {
+    min-height: 100vh;
+    padding: 30px 0;
+    background-color: #C7253E;
+}
+.error-blok {
+    min-height: 100vh;
+    padding: 30px 0;
+    background-color: #C7253E;  
+}
+.title {
+    font-size: 25px;
+    color: var(--omen);
+    margin-bottom: 20px;
+    font-family: "Podkova", sans-serif;
+}
+.nt{
+    margin: 10px 0;
+}
+.card {
+    background-color: #61051f;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.card__title {
+    color: var(--raze);
+    font-family: "Podkova", sans-serif;
+    font-size: 20px;
+}
+.card__category {
+    background-color: #C7253E;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.card__date {
+    font-size: 15px;
+    color: #000000;
+}
+.news_im {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.text {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.card__category.primary-invers {
+    background-color: var(--raze);
+    color: #000000;
+    
+}
+.ct-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.ct-list_item {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    border: 2px solid var(--reyna);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+.news_category_im {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    display: block;
+}
+.news_category_name {
+    display: block;
+    text-align: center;
+
+}
+.ct-list_item:hover {
+    background-color: #FABC3F;
+}
+.category_name{
+    color: var(--omen);
+}
+.mb-10 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.mb-10 svg {
+    color: var(--reyna); 
+}
+.error.title {
+    text-align: center ;
+    color: var(--clove);
+}   
+.center {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        background-color: var(--killjoy);
+    }
+    50% {
+        background-color: var(--raze);
+    }
+    100% {
+        background-color: var(--killjoy);
+    } 
+}
+
+.button {
+    padding: 10px, 40px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.primary {
+    background-color: var(--raze);
+    color: var(--omen);
+    text-align: center;
+}
+.danger {
+    display: block;
+    width: 160%;
+    margin: 0% auto;
+    background-color: var(--raze);
+    color: var(--omen);
+}
+ 
+
+
+.loading {
+    padding: 30px 20px;
+    background-color: var(--reyna);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.loading-title {
+    border-radius: 10px;
+    background-color: var(--killjoy);
+    width: 100%;
+    height: 30px;
+    animation: loadingAnimation 2s infinite;
+}
+.loading-card {
+    background-color: var(--killjoy);
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    animation: loadingAnimation 2s infinite;
+}
+.loading-row {
+    padding: 30px 20px;
+    background-color: var(--reyna);
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.loading-item {
+    width: 100%;
+    height: 100px;
+    background-color: var(--killjoy);
+    border-radius: 10px;
+    animation: loadingAnimation 2s infinite;
+}
+.category_color {
+    color: var(--omen)
+}
+.link_button {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    border: 2px solid var(--reyna);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
